@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+ <h1>{{ geodata}}</h1>
+  <body>
+ <p id="demo"></p>
+  </body>
+
+  <script type="text/javascript">
+      var someVar ={{ geodata }};
+      var item = JSON.parse(someVar);
+      alert(item);
+      //console.log(someVar.length);
+      for (i= 0;i <= someVar.length;i++)
+      {
+        var obj = someVar[i];
+        console.log(obj);
+      }
+
+
+  </script>
+
+
+
+
+</html>
